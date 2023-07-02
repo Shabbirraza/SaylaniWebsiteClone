@@ -241,13 +241,13 @@ div.content>* {
     box-shadow: 0 .5px 5px -2px #72777e;
     align-items: center;
     justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky; */
+    position: sticky !important;
     top: 0;
  background-color: white;
  flex-wrap: wrap;
  z-index: 5;
-
+overflow: hidden;
    
 }
 .navbar img{
@@ -331,6 +331,8 @@ display: none;
 .navbar{
     justify-content: space-between;
     padding: 0px 40px;
+    position: sticky;
+    top: 0px;
 }
 }
 
@@ -371,6 +373,7 @@ flex-direction: column;
     row-gap: 10px;
     margin-top: 0px;
     border-bottom: solid white .1px;
+    
 
  }
  .subFooterContent{
@@ -394,10 +397,32 @@ flex-direction: column;
     list-style-type: none;
     color: white;
     line-height: 3;
+    font-size: 14px;
+    word-break: break-word;
  }
  .copyright{
     text-align: center;
     color: white;
+ }
+
+
+ @media screen and (max-width: 900px) {
+    .footer{
+        flex-direction: column !important;
+        height: 100vh;
+        align-items: center;
+        margin-bottom: 0px !important;
+    }
+    .footerContent{
+        flex-direction: column;
+    }
+.subFooterContent{
+    align-items: center;
+   flex-wrap: wrap;
+}
+.subFooterContent ul li{
+    text-align: center;
+}
  }
 
 .statsDivMain{
@@ -447,4 +472,5 @@ flex-direction: column;
 }
 .sunStatsDiv h1,p  {
 color: white;
+
 }
