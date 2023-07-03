@@ -470,10 +470,11 @@ flex-direction: column;
     
 }
 .sunStatsDiv{
-    width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5px;
 }
 .sunStatsDiv h1,p  {
 color: white;
