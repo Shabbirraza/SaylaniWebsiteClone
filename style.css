@@ -433,22 +433,23 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     margin-bottom:  40px;
-}
+    }
  .statsDiv{
     width: 90vw;
-    height: 70vh;
+    /* height: 70vh; */
     background-image: url('footerback.png');
     position: relative;
     background-color: #6610f2;
     z-index: -1;
     display: flex;
-    flex-direction: row;
+
     justify-content: center;align-items: center;
-    flex-wrap: wrap;
-
-
-
+    flex-wrap: wrap !important;
+    padding: 100px;
 }
+
+
+
 .statsDiv .imageDiv{
     background-color: white;
     border-radius: 50%;
@@ -469,7 +470,7 @@ flex-direction: column;
     
 }
 .sunStatsDiv{
-    width: 20%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
