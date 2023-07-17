@@ -84,7 +84,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: center;
     width: 100vw;
     z-index: 1;
 
@@ -121,7 +121,7 @@ div.content>* {
 }
 
 .image img {
-    height: 360px;
+    height: 420px;
     vertical-align: middle;
 
 }
@@ -154,7 +154,9 @@ div.content>* {
 .iconRight {
     font-size: 17px;
 }
-
+.boxesHeading{
+    margin-top: 75px;
+}
 .boxContainer {
     display: flex;
     flex-direction: row;
@@ -163,7 +165,8 @@ div.content>* {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin-bottom: 20px;
+    /* margin-top: 60px; */
+  
     flex-wrap: wrap;
     /* height: 60vh; */
     margin-bottom: 60px;
@@ -185,12 +188,15 @@ div.content>* {
 
 @media screen and (max-width: 620px) {
     .box {
-        width: 80%;
+        width: 80% !important;
+        height: 60%;
+        padding: 15px;
 
     }
 
     .box img {
-        width: 20% !important;
+        width: 50px!important;
+        height: 50px;
     }
 }
 
@@ -200,7 +206,9 @@ div.content>* {
 }
 
 .box img {
-    width: 40%;
+    width: 70px !important;
+    height: 70px;
+    object-fit: contain;
 }
 
 .boxesHeading {
@@ -484,7 +492,7 @@ div.content>* {
     /* height: 70vh; */
     background-image: url('footerback.png');
     position: relative;
-    background-color: #6610f2;
+    background-color: #0d6efd;
     z-index: -1;
     display: flex;
 
@@ -492,6 +500,7 @@ div.content>* {
     align-items: center;
     flex-wrap: wrap !important;
     padding: 100px;
+    gap: 50px;
 }
 
 
