@@ -283,7 +283,31 @@ div.content>* {
     overflow: hidden;
 
 }
+/* ==========javascript=================== */
 
+.toggleWidth{
+    width: 100%;
+}
+.navbarHam{
+    flex-direction: column !important;
+   align-items: start;
+   transition: 1s;
+}
+
+.ulOnHamClick{
+    display: flex !important;
+    width: 100%;
+    flex-direction: column;
+    transition: 1s ;
+}
+.liOnHamClick{
+    display: block !important;
+    width: 100% !important;
+    align-self: flex-start;
+    padding: 15px;
+    color: black;
+    font-weight: 600;
+}
 .navbar img {
     width: 240px
 }
@@ -359,6 +383,9 @@ div.content>* {
     font-size: 20px;
     cursor: pointer;
     display: none;
+    position: absolute;
+    right: 40px;
+    top: 10px;
 }
 
 @media screen and (max-width: 1200px) {
